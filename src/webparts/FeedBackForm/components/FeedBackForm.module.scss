@@ -1,0 +1,53 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.FeedBackForm {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.WebPartTitle {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  color: white;
+}
+
+.SuccessPlaceHolder, i{
+  color: green;
+}
+
+.msGrid{
+  @include ms-Grid;
+}
+
+.msGridrow{
+  @include ms-Grid-row;
+  align-items: center;
+  display: flex;
+}
+
+.msGridcol25{
+  @include ms-Grid-col;
+  @include ms-sm3;
+  @include ms-md3;
+  @include  ms-lg3;
+}
+
+.msGridcol50{
+  @include ms-Grid-col;
+  @include ms-sm6;
+  @include ms-md6;
+  @include  ms-lg6;
+}
+
+.msGridcol75{
+  @include ms-Grid-col;
+  @include ms-sm9;
+  @include ms-md9;
+  @include  ms-lg9;
+}
