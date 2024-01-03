@@ -49,8 +49,7 @@ export default class FeedBackFormWebPart extends BaseClientSideWebPart<IFeedBack
         sp:this.spList,
         SupportType:this.properties.colSupportType,
         context:this.context,
-        FeedbackListID:this.properties.FeedbacklistID,        
-        colParticipant: this.properties.colParticipant,
+        FeedbackListID:this.properties.FeedbacklistID,
         colComments: this.properties.colComments,
         colSupportType: this.properties.colSupportType,
         colTitle: this.properties.colTitle,
@@ -145,7 +144,7 @@ export default class FeedBackFormWebPart extends BaseClientSideWebPart<IFeedBack
       pages: [
         {
           header: {
-            description: strings.Title,
+            description: strings.description,
           },
           groups: [
             {
@@ -169,22 +168,6 @@ export default class FeedBackFormWebPart extends BaseClientSideWebPart<IFeedBack
                   key: "listPickerFieldId",
                   baseTemplate: 100,
                 }),
-
-                PropertyFieldColumnPicker("colParticipant", {
-                  label: strings.lblDrpParticipantColumns,
-                  context: this.context,
-                  selectedColumn: this.properties.colParticipant,
-                  listId: this.properties.FeedbacklistID,
-                  disabled: false,
-                  orderBy: PropertyFieldColumnPickerOrderBy.Title,
-                  onPropertyChange: this.onPropertyPaneFieldChanged.bind(this),
-                  properties: this.properties,
-                  onGetErrorMessage: undefined,
-                  deferredValidationTime: 0,
-                  key: "colParticipant",
-                  displayHiddenColumns: false,
-                  columnReturnProperty: IColumnReturnProperty["Internal Name"],
-                }),
                 PropertyFieldColumnPicker("colComments", {
                   label: strings.lblDrpCommentsColumn,
                   context: this.context,
@@ -196,6 +179,7 @@ export default class FeedBackFormWebPart extends BaseClientSideWebPart<IFeedBack
                   properties: this.properties,
                   onGetErrorMessage: undefined,
                   deferredValidationTime: 0,
+                  filter: "Hidden eq false and ReadOnlyField eq false and FieldTypeKind eq 3",
                   key: "colComments",
                   displayHiddenColumns: false,
                   columnReturnProperty: IColumnReturnProperty["Internal Name"],
@@ -211,6 +195,7 @@ export default class FeedBackFormWebPart extends BaseClientSideWebPart<IFeedBack
                   properties: this.properties,
                   onGetErrorMessage: undefined,
                   deferredValidationTime: 0,
+                  filter: "Hidden eq false and ReadOnlyField eq false and FieldTypeKind eq 6",
                   key: "colSupportType",
                   displayHiddenColumns: false,
                   columnReturnProperty: IColumnReturnProperty["Internal Name"],

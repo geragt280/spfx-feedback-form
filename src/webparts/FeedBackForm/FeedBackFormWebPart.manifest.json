@@ -21,9 +21,9 @@
     {
       "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Advanced
       "group": { "default": "Advanced" },
-      "title": { "default": "FeedBackForm" },
+      "title": { "default": "Feedback Form" },
       "description": { "default": "FeedBackForm description" },
-      "officeFabricIconFontName": "Page",
+      "officeFabricIconFontName": "People",
       "properties": {
         "description": "FeedBackForm",
         "colTitle": "Title",        

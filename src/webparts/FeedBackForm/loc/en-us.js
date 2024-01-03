@@ -1,7 +1,8 @@
 define([], function() {
   return {
     "Title": "Title",
-    "BasicGroupName": "Group Name",
+    "description": "This will allow a person to provide feedback to our organization",
+    "BasicGroupName": "Webpart Setting",
     "DescriptionFieldLabel": "Description Field",
     "AppLocalEnvironmentSharePoint": "The app is running on your local environment as SharePoint web part",
     "AppLocalEnvironmentTeams": "The app is running on your local environment as Microsoft Teams app",

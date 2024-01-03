@@ -10,7 +10,6 @@ export interface IFeedBackFormProps {
   SupportType: string;
   context: WebPartContext;
   FeedbackListID:string;
-  colParticipant: string;
   colComments: string;
   colSupportType: string;
   colTitle: string;

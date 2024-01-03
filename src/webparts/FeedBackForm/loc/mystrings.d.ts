@@ -1,5 +1,6 @@
 declare interface IFeedBackFormWebPartStrings {
   Title: string;
+  description: string;
   BasicGroupName: string;
   DescriptionFieldLabel: string;
   AppLocalEnvironmentSharePoint: string;

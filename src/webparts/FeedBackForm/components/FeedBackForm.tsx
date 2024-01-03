@@ -233,7 +233,6 @@ export default class FeedBackForm extends React.Component<
     // console.log("Submit clicked");
     const dynamicObject = {
       [this.props.colTitle]: this.state.CurrectUser?.Title,
-      [this.props.colParticipant + "Id"]: this.state.CurrectUser?.Id,
       [this.props.colComments]: this.state.Comments,
       [this.props.colSupportType]: this.state.selectedType,
     };
